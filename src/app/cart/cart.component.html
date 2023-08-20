@@ -1,0 +1,27 @@
+
+
+<div class="margin20 centeritems" *ngIf="cartproductitems.length > 0 ; else nodata">
+    <table class="table table-boardered">
+        <tr class="bg-primary">
+         
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>category</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let product of cartproductitems">
+           
+            <td><a [routerLink]="['/products',product.id]">{{product.id}}</a></td>
+            <td>{{product.title}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.category}}</td>
+            <td><button (click)="removeItem(product)">Remove</button></td>
+            
+        </tr>
+    </table>
+</div>
+<ng-template #nodata>
+
+    {{error}}
+</ng-template>

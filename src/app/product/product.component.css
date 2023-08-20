@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid;
+    width: auto;
+    padding: auto;
+    margin: auto;
+  }
+  .margin20{
+    margin-top: 50px;
+}
+.btn{
+    margin-top: 20px;
+    padding: auto;
+    color: #fff;
+}
+

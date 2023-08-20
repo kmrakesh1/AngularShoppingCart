@@ -1,0 +1,30 @@
+.margin20{
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid;
+    width: auto;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    align-items: center
+    
+  }
+ .centeritems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .form-select{
+    width: auto;
+ }
+ .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:blue;
+    color: white;
+    text-align: center;
+  }
